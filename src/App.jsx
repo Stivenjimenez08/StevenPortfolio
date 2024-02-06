@@ -1,11 +1,11 @@
 import { BtnLanguaje } from "./components/atoms/BtnLanguaje";
-import { BtnMode } from "./components/atoms/BtnMode";
+import { NavBar } from "./components/molecules/NavBar/NavBar";
 
 export const App = () => {
 
   return (
-    <div className='h-screen flex flex-col justify-center items-center '>
-      <BtnMode/>
+    <div>
+      <NavBar/>
       <BtnLanguaje/>
     </div>
   );
