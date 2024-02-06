@@ -1,12 +1,10 @@
-import { BtnLanguaje } from "./components/atoms/BtnLanguaje";
 import { NavBar } from "./components/molecules/NavBar/NavBar";
 
-export const App = () => {
+export const App = ({ toggleTheme }) => {
 
   return (
     <div>
-      <NavBar/>
-      <BtnLanguaje/>
+      <NavBar toggleTheme={toggleTheme}/>
     </div>
   );
 }

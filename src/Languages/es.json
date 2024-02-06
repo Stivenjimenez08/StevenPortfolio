@@ -1,4 +1,7 @@
 {
-    "welcome": "Bienvenido a mi portafolio",
-    "about": "Sobre mí"
+    "whoAmI": "¿Quién soy?",
+    "mySkills": "Mis Habilidades",
+    "projects": "Proyectos",
+    "changeLanguage": "Cambiar Idioma",
+    "changeTheme": "Cambiar Tema"
 }

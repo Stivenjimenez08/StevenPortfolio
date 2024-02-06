@@ -1,4 +1,7 @@
 {
-    "welcome": "welcome to my portfolio",
-    "about": "About Me"
+    "whoAmI": "Who am I?",
+    "mySkills": "My Skills",
+    "projects": "Projects",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme"
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createRoot }from 'react-dom/client';
 import { App } from './App.jsx'
-import { Button, CssBaseline, ThemeProvider, createTheme } from '@mui/material'
+import {CssBaseline, ThemeProvider, createTheme } from '@mui/material'
 
 const darkTheme = createTheme({
   palette: {
@@ -34,25 +34,10 @@ const lightTheme = createTheme({
   palette: {
     type: 'light',
     primary: {
-      main: '#024959',
-      dark: '#000000',
-      contrastText: '#F2E3D5',
+      main: '#283373',
     },
     secondary: {
-      main: '#dec5a5',
-    },
-    background: {
-      default: '#FFFFFF',
-      paper: '#F2F2F2',
-    },
-    text: {
-      primary: '#000000',
-      hint: 'rgba(0,0,0,0.5)',
-      disabled: 'rgba(0,0,0,0.5)',
-    },
-    divider: '#000000',
-    error: {
-      main: '#c54d15',
+      main: '#f50057',
     },
   },
 });
@@ -70,8 +55,7 @@ function Main() {
     <React.StrictMode>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <App />
-        <Button onClick={toggleTheme}>Toggle Theme</Button>
+        <App toggleTheme={toggleTheme}/>
       </ThemeProvider>
     </React.StrictMode>
   );
