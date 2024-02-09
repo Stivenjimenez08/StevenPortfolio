@@ -11,7 +11,6 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
 import logo from '../../../assets/LOGO.png'
 import { useTranslation } from 'react-i18next';

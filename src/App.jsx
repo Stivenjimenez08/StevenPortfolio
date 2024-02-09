@@ -1,6 +1,6 @@
 import { AboutMe } from "./components/molecules/AboutMe/AboutMe";
-import { Carousel } from "./components/molecules/carousel/Carousel";
 import { NavBar } from "./components/molecules/NavBar/NavBar";
+import { Network } from "./components/molecules/Network/Network";
 import './Style.css'
 
 export const App = ({ toggleTheme }) => {
@@ -9,7 +9,7 @@ export const App = ({ toggleTheme }) => {
     <div className="contGlobal">
       <NavBar toggleTheme={toggleTheme}/>
       <AboutMe/>
-      <Carousel/>
+      <Network/>
     </div>
   );
 }

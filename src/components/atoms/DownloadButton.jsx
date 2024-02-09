@@ -1,12 +1,10 @@
 import React from 'react';
 import Hv from '../../assets/Hv-SteveenJimenez.pdf'
-import { Button } from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import cv from "../../assets/cv.png";
+import "../StyleComponent.css"
 
 
 export const DownloadButton = () => {
-
-  const { t} = useTranslation();
 
   const handleDownload = () => {
     
@@ -25,9 +23,9 @@ export const DownloadButton = () => {
   };
 
   return (
-    <Button onClick={handleDownload} color='secondary' className='btnDownload'>
-     {t('download')}
-    </Button>
+    <a onClick={handleDownload} color='secondary' className='btnDownload'>
+      <img src={cv} className="socialMediaCv" alt="Descargar Cv" />
+    </a>
   );
 };
 

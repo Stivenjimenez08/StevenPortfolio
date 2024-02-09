@@ -2,6 +2,7 @@ import React from "react";
 import { Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import photo from "../../../assets/fotohv.jpg";
+import "../../StyleComponent.css"
 
 export const AboutMe = () => {
   const { t } = useTranslation();
