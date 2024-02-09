@@ -1,29 +1,23 @@
-import { Button, Typography } from '@mui/material'
-import React from 'react'
-import { useTranslation } from 'react-i18next'
-import photo from '../../../assets/fotohv.jpg'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import { DownloadButton } from '../../atoms/DownloadButton';
+import React from "react";
+import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import photo from "../../../assets/fotohv.jpg";
 
 export const AboutMe = () => {
-
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
-    <div className='contentHome'>
-      <img src={photo} alt="Photo About Me" className='photo'/>
-      <Typography>Steveen Jimenez Zuluaga</Typography>
-      <Typography>{t('profession')}</Typography>
-      <div className='contentDescription'>
-        <Typography>{t('description')}</Typography>
-        <Typography>{t('description2')}</Typography>
+    <div className="contentHome">
+        <div className="contentPersonalInfo">
+          <Typography id="name">Steveen Jimenez Zuluaga</Typography>
+          <Typography id="profession">{t("profession")}</Typography>
+        </div>
+      <div className="contentInfo">
+      <img src={photo} alt="Photo About Me" className="photo" />
+        <div className="contentDescription">
+          <Typography id="description">{t("home")}</Typography>
+        </div>
       </div>
-      <div className='contentNetworks'>
-        <Button><LinkedInIcon color={'secondary'}/></Button>
-        <Button><GitHubIcon color={'secondary'}/></Button>
-      </div>
-      <DownloadButton/>
     </div>
-  )
-}
+  );
+};

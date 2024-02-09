@@ -7,3 +7,8 @@
     --sixth: #e9d7ba;
     --text: #000000;
 }
+.contGlobal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
