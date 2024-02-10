@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { AboutMe } from "./components/molecules/AboutMe/AboutMe";
 import { Home } from "./components/molecules/Home/Home";
 import { NavBar } from "./components/molecules/NavBar/NavBar";
+import { AboutMe } from "./components/molecules/AboutMe/AboutMe";
 import { Network } from "./components/molecules/Network/Network";
+import { Habilities } from "./components/molecules/Habilities/Habilities";
 import './Style.css'
 
 export const App = ({ toggleTheme }) => {
@@ -18,6 +19,7 @@ export const App = ({ toggleTheme }) => {
       <Home/>
       <Network/>
       <AboutMe isDarkTheme={isDarkTheme}/>
+      <Habilities isDarkTheme={isDarkTheme}/>
     </div>
   );
 }

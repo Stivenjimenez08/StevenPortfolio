@@ -53,6 +53,11 @@
         width: 35vw;
     }
 }
+.imgHability{
+    width: 4.5rem;
+    height: 4rem;
+}
+
 
 
 @media (max-width: 480px) {
@@ -329,6 +334,35 @@
         & .imgDevelop{
             width: 30vw;
             height: 40vh;
+        }
+    }
+    .contentHabilities{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .contImgHability{
+            width: 23vw;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+            & .imgHabilities{
+                margin-left: 5rem;
+                width: 23vw;
+                height: 35vh;
+            }
+        }
+        
+        & .habilities{
+            margin-left: 5rem;
+            width: 33vw;
+            height: 35vh;
+            border: solid 2px white;
+            flex-wrap: wrap;
+            & .imgHability{
+                margin: 2rem;
+            }
         }
     }
 }
