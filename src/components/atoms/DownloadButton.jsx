@@ -23,9 +23,14 @@ export const DownloadButton = () => {
   };
 
   return (
-    <a onClick={handleDownload} color='secondary' className='btnDownload'>
+    <div class="image-container">
+        <a onClick={handleDownload} color='secondary' className='btnDownload socialLink' href='#'>
       <img src={cv} className="socialMediaCv" alt="Descargar Cv" />
     </a>
+    <div class="image-name">Download CV</div>
+      </div>
+    
+
   );
 };
 

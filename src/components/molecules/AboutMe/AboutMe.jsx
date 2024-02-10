@@ -1,24 +1,20 @@
-import React from "react";
-import { Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
-import photo from "../../../assets/fotohv.jpg";
+import { Typography } from '@mui/material'
+import DevelopDark from '../../../assets/develop.gif'
+import DevelopLight from '../../../assets/develop2.gif'
+import { useTranslation } from 'react-i18next'
 import "../../StyleComponent.css"
 
-export const AboutMe = () => {
-  const { t } = useTranslation();
+export const AboutMe = ({ isDarkTheme }) => {
+    const { t } = useTranslation();
+    const developGif = isDarkTheme ? DevelopDark : DevelopLight;
 
   return (
-    <div className="contentHome">
-        <div className="contentPersonalInfo">
-          <Typography id="name">Steveen Jimenez Zuluaga</Typography>
-          <Typography id="profession">{t("profession")}</Typography>
+    <div className="contentAboutMe">
+        <img src={developGif} className='imgDevelop'/>
+        <div className='ContentAbout'>
+            <Typography id="description">{t("description")}</Typography>
+            <Typography id="description">{t("description2")}</Typography>
         </div>
-      <div className="contentInfo">
-      <img src={photo} alt="Photo About Me" className="photo" />
-        <div className="contentDescription">
-          <Typography id="description">{t("home")}</Typography>
-        </div>
-      </div>
     </div>
-  );
-};
+  )
+}
