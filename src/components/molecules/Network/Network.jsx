@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
+import whatsapp from "../../../assets/whatsapp.png";
 import linkedIn from "../../../assets/linkedin.png";
 import github from "../../../assets/github-sign.png";
-import whatsapp from "../../../assets/whatsapp.png";
-import "../../StyleComponent.css"
 import { DownloadButton } from "../../atoms/DownloadButton";
+import "../../StyleComponent.css"
 
 const LinkedIn = "https://www.linkedin.com/in/steveen-jimenez-719235255/"
 const Github = "https://github.com/Stivenjimenez08"
 const Whatsapp = "https://w.app/hgYBpy"
+
 export const Network = () => {
 
   const [scrollY, setScrollY] = useState(0);
