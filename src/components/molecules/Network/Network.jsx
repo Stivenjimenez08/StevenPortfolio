@@ -27,8 +27,9 @@ export const Network = () => {
   }, []);
 
   return (
+    
     <div className="contentNetwork" style={{ top: `${scrollY + offset}px `, position: "absolute" }}>
-      <div class="image-container">
+      <div className="image-container">
         <a href={LinkedIn} target="blank" className="socialLink"><img src={linkedIn} className="socialMedia" alt="linkedIn" /></a>
         <div class="image-name">LinkedIn</div>
       </div>
@@ -40,6 +41,7 @@ export const Network = () => {
       <a href={Whatsapp} target="blank" className="socialLink"><img src={whatsapp}  className="socialMedia"alt="Whatsapp" /></a>
       <div class="image-name">Whatsapp</div>
       </div>
+
       <DownloadButton/>
     </div>
   );

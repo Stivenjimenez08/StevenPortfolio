@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Master Task",
+      "image": "URL de la imagen 1",
+      "text": "Descripción del proyecto 1"
+    },
+    {
+      "id": 2,
+      "title": "CRM ZTechnology",
+      "image": "URL de la imagen 2",
+      "text": "Descripción del proyecto 2"
+    },
+    {
+      "id": 3,
+      "title": "Portafolio",
+      "image": "URL de la imagen 3",
+      "text": "Descripción del proyecto 3"
+    }
+  ]
+  

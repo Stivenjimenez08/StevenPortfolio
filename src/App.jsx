@@ -4,6 +4,7 @@ import { NavBar } from "./components/molecules/NavBar/NavBar";
 import { AboutMe } from "./components/molecules/AboutMe/AboutMe";
 import { Network } from "./components/molecules/Network/Network";
 import { Habilities } from "./components/molecules/Habilities/Habilities";
+import { Projects } from "./components/molecules/Projects/Projects";
 import './Style.css'
 
 export const App = ({ toggleTheme }) => {
@@ -20,6 +21,7 @@ export const App = ({ toggleTheme }) => {
       <Network/>
       <AboutMe isDarkTheme={isDarkTheme}/>
       <Habilities isDarkTheme={isDarkTheme}/>
+      {/* <Projects/> */}
     </div>
   );
 }
