@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import HabiliesDark from "../../../assets/habilitiesDark.gif";
-import HabiliesLight from "../../../assets/habilitiesLight.gif";
+import HabiliesDark from "../../../assets/Habilities/habilitiesDark.gif";
+import HabiliesLight from "../../../assets/Habilities/habilitiesLight.gif";
 import imagenes from "./imagenes";
 import "../../StyleComponent.css"
 import { useTranslation } from "react-i18next";

@@ -1,6 +1,6 @@
 import React from 'react';
 import Hv from '../../assets/Hv-SteveenJimenez.pdf'
-import cv from "../../assets/cv.png";
+import cv from "../../assets/Networks/cv.png";
 import "../StyleComponent.css"
 import { useTranslation } from 'react-i18next';
 

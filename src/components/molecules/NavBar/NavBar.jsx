@@ -17,7 +17,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '../../../config/i18next.config'
 import '../../StyleComponent.css'
 
-export const NavBar = ({ toggleTheme }) => {
+export const NavBar = ({ toggleTheme, toggleLanguage }) => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -38,7 +38,8 @@ export const NavBar = ({ toggleTheme }) => {
     setAnchorElUser(null);
   };
 
-  const toggleLanguage = () => {
+  const handleToggleLanguage = () => {
+    toggleLanguage();
     const newLanguage = i18n.language === 'en' ? 'es' : 'en';
     i18n.changeLanguage(newLanguage);
     handleCloseUserMenu();
@@ -124,7 +125,7 @@ export const NavBar = ({ toggleTheme }) => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-             <MenuItem onClick={toggleLanguage}>
+             <MenuItem onClick={handleToggleLanguage}>
                 <Typography textAlign="center" color={'secondary'}>{t('changeLanguage')}</Typography>
              </MenuItem>
              <MenuItem onClick={() => { toggleTheme(); handleCloseUserMenu(); }}>

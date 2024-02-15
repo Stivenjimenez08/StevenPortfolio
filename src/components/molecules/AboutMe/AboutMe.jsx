@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material'
-import DevelopDark from '../../../assets/develop.gif'
-import DevelopLight from '../../../assets/develop2.gif'
+import DevelopDark from '../../../assets/About/develop.gif'
+import DevelopLight from '../../../assets/About/develop2.gif'
+
 import { useTranslation } from 'react-i18next'
 import "../../StyleComponent.css"
 

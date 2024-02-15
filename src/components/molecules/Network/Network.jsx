@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import whatsapp from "../../../assets/whatsapp.png";
-import linkedIn from "../../../assets/linkedin.png";
-import github from "../../../assets/github-sign.png";
+import whatsapp from "../../../assets/Networks/whatsapp.png";
+import github from "../../../assets/Networks/github-sign.png";
+import linkedIn from "../../../assets/Networks/linkedin.png";
 import { DownloadButton } from "../../atoms/DownloadButton";
 import "../../StyleComponent.css"
 

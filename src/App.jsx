@@ -9,19 +9,25 @@ import './Style.css'
 
 export const App = ({ toggleTheme }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [language, setLanguage] = useState('es');
 
   const toggleThemeWrapper = () => {
     setIsDarkTheme(prevState => !prevState);
     toggleTheme(); 
   };
+  const toggleLanguage = () => {
+    const newLanguage = language === 'en' ? 'es' : 'en';
+    setLanguage(newLanguage);
+  };
+
   return (
     <div className="contGlobal">
-      <NavBar toggleTheme={toggleThemeWrapper}/>
+      <NavBar toggleTheme={toggleThemeWrapper} toggleLanguage={toggleLanguage}/>
       <Home/>
       <Network/>
       <AboutMe isDarkTheme={isDarkTheme}/>
       <Habilities isDarkTheme={isDarkTheme}/>
-      {/* <Projects/> */}
+      <Projects language={language}/>
     </div>
   );
 }
