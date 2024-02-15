@@ -3,19 +3,19 @@
     {
       "id": 1,
       "title": "Master Task",
-      "image": "../../../assets/Projects/Todo.png",
+      "image": "Todo.png",
       "text": "Una aplicación de notas que te permite crear un usuario, gestionar información y realizar diversas acciones con las notas, como crear, editar, eliminar o simplemente visualizarlas"
     },
     {
       "id": 2,
       "title": "CRM ZTechnology",
-      "image": "../../../assets/Projects/",
+      "image": "Crm.png",
       "text": "Una aplicación que incluye funciones para la gestión de empleados y roles, así como la gestión de productos, clientes y cotizaciones. Permite realizar acciones como crear, editar, eliminar o simplemente visualizar información relacionada con cada uno de estos aspectos."
     },
     {
       "id": 3,
       "title": "Portafolio",
-      "image": "../../../assets/Projects/",
+      "image": "Portfolio.png",
       "text": "Este proyecto es mi portafolio personal, el cual estás viendo en este momento. Aquí encontrarás mi información profesional, detalles sobre mí y todas las tecnologías que domino, así como información sobre todos mis proyectos."
     }
   ],
@@ -23,19 +23,19 @@
     {
       "id": 1,
       "title": "Master Task",
-      "image": "../../../assets/Projects/Todo.png",
+      "image": "Todo.png",
       "text": "A notes application that allows you to create a user, manage information and perform various actions with the notes, such as creating, editing, deleting or simply viewing them."
     },
     {
       "id": 2,
       "title": "CRM ZTechnology",
-      "image": "../../../assets/Projects/",
+      "image": "Crm.png",
       "text": "An application that includes functions for the management of employees and roles, as well as the management of products, customers and quotations. It allows actions such as creating, editing, deleting or simply viewing information related to each of these aspects."
     },
     {
       "id": 3,
       "title": "Portfolio",
-      "image": "../../../assets/Projects/",
+      "image": "Portfolio.png",
       "text": "This project is my personal portfolio, which you are currently viewing. Here you will find my professional information, details about me and all the technologies I master, as well as information about all my projects."
     }
   ]
