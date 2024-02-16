@@ -1,11 +1,11 @@
-import {CardProject} from '../../atoms/CardProject'
-import projectsData from './Projects.json'
-import "../../StyleComponent.css"
 import { useEffect, useState } from 'react';
+import projectsData from './Projects.json'
+import {CardProject} from '../../index'
+import "../../StyleComponent.css"
 
+import PortfolioImage from '../../../assets/Projects/Portfolio.png';
 import TodoImage from '../../../assets/Projects/Todo.png';
 import CrmImage from '../../../assets/Projects/Crm.png';
-import PortfolioImage from '../../../assets/Projects/Portfolio.png';
 
 export const Projects = ({ language }) => {
 

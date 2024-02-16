@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import whatsapp from "../../../assets/Networks/whatsapp.png";
-import github from "../../../assets/Networks/github-sign.png";
-import linkedIn from "../../../assets/Networks/linkedin.png";
-import { DownloadButton } from "../../atoms/DownloadButton";
+import { DownloadButton } from "../../index";
 import "../../StyleComponent.css"
+
+import github from "../../../assets/Networks/github-sign.png";
+import whatsapp from "../../../assets/Networks/whatsapp.png";
+import linkedIn from "../../../assets/Networks/linkedin.png";
 
 const LinkedIn = "https://www.linkedin.com/in/steveen-jimenez-719235255/"
 const Github = "https://github.com/Stivenjimenez08"

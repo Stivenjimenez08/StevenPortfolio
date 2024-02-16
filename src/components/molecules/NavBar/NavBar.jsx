@@ -11,6 +11,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
 import logo from '../../../assets/LOGO.png'
 import { useTranslation } from 'react-i18next';
@@ -45,8 +46,14 @@ export const NavBar = ({ toggleTheme, toggleLanguage }) => {
     handleCloseUserMenu();
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <a><img src={logo} width={150} className='logo'/></a>
@@ -80,27 +87,43 @@ export const NavBar = ({ toggleTheme, toggleLanguage }) => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{t('whoAmI')}</Typography>
+              <MenuItem onClick={() => { handleCloseNavMenu(); scrollToSection('home'); }}>
+                {t('whoAmI')}
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{t('mySkills')}</Typography>
+
+              <MenuItem onClick={() => { handleCloseNavMenu(); scrollToSection('about'); }}>
+                {t('about')}
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{t('projects')}</Typography>
+
+              <MenuItem onClick={() => { handleCloseNavMenu(); scrollToSection('skills'); }}>
+                {t('mySkills')}
               </MenuItem>
+
+              <MenuItem onClick={() => { handleCloseNavMenu(); scrollToSection('projects'); }}>
+                {t('projects')}
+              </MenuItem>
+       
             </Menu>
           </Box>
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-                <Typography textAlign="center" color={'secondary'}>{t('whoAmI')}</Typography>
+
+            <Button onClick={() => { scrollToSection('home'); }} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Typography textAlign="center" color={'secondary'}>{t('whoAmI')}</Typography>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-                <Typography textAlign="center" color={'secondary'}>{t('mySkills')}</Typography>
+
+            <Button onClick={() => { scrollToSection('about'); }} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Typography textAlign="center" color={'secondary'}>{t('about')}</Typography>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-                <Typography textAlign="center" color={'secondary'}>{t('projects')}</Typography>
+
+            <Button onClick={() => { scrollToSection('skills'); }} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Typography textAlign="center" color={'secondary'}>{t('mySkills')}</Typography>
             </Button>
+
+            <Button onClick={() => { scrollToSection('projects'); }} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Typography textAlign="center" color={'secondary'}>{t('projects')}</Typography>
+            </Button>
+
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Home } from "./components/molecules/Home/Home";
-import { NavBar } from "./components/molecules/NavBar/NavBar";
-import { AboutMe } from "./components/molecules/AboutMe/AboutMe";
-import { Network } from "./components/molecules/Network/Network";
-import { Habilities } from "./components/molecules/Habilities/Habilities";
-import { Projects } from "./components/molecules/Projects/Projects";
+import { useRef } from 'react';
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
+import { Home, NavBar, AboutMe, Network, Habilities, Projects } from "./components/index";
 import './Style.css'
 
 export const App = ({ toggleTheme }) => {
+
+  const aboutRef = useRef(null); 
+  const networkRef = useRef(null);
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const [language, setLanguage] = useState('es');
 
@@ -21,14 +21,25 @@ export const App = ({ toggleTheme }) => {
   };
 
   return (
+    
     <div className="contGlobal">
-      <NavBar toggleTheme={toggleThemeWrapper} toggleLanguage={toggleLanguage}/>
-      <Home/>
-      <Network/>
-      <AboutMe isDarkTheme={isDarkTheme}/>
-      <Habilities isDarkTheme={isDarkTheme}/>
-      <Projects language={language}/>
+      <NavBar toggleTheme={toggleThemeWrapper} toggleLanguage={toggleLanguage} />
+      <Network />
+      
+      <section id="home"> <Home /> </section>
+      <section id="about"> <AboutMe isDarkTheme={isDarkTheme} /> </section>
+      <section id="skills"> <Habilities isDarkTheme={isDarkTheme} /> </section>
+      <section id="projects"> <Projects language={language} /> </section>
     </div>
+
+    // <div className="contGlobal">
+    //   <NavBar toggleTheme={toggleThemeWrapper} toggleLanguage={toggleLanguage}/>
+    //   <Home/>
+    //   <Network/>
+    //   <AboutMe isDarkTheme={isDarkTheme}/>
+    //   <Habilities isDarkTheme={isDarkTheme}/>
+    //   <Projects language={language}/>
+    // </div>
   );
 }
 
