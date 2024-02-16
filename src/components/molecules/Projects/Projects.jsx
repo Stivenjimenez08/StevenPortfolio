@@ -42,6 +42,8 @@ export const Projects = ({ language }) => {
           title={project.title}
           image={project.image}
           text={project.text}
+          github={project.github}
+          web={project.web}
         />
       ))}
     </div>

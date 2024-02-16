@@ -4,19 +4,25 @@
       "id": 1,
       "title": "Master Task",
       "image": "Todo.png",
-      "text": "Una aplicación de notas que te permite crear un usuario, gestionar información y realizar diversas acciones con las notas, como crear, editar, eliminar o simplemente visualizarlas"
+      "text": "Una aplicación de notas que te permite crear un usuario, gestionar información y realizar diversas acciones con las notas, como crear, editar, eliminar o simplemente visualizarlas",
+      "github":"https://github.com/Stivenjimenez08/MasterTask-Frontend?tab=readme-ov-file",
+      "web":"https://mastertask-frontend-production.up.railway.app/"
     },
     {
       "id": 2,
       "title": "CRM ZTechnology",
       "image": "Crm.png",
-      "text": "Una aplicación que incluye funciones para la gestión de empleados y roles, así como la gestión de productos, clientes y cotizaciones. Permite realizar acciones como crear, editar, eliminar o simplemente visualizar información relacionada con cada uno de estos aspectos."
+      "text": "Aplicación con funcionalidades para la gestión de empleados y roles, así como la gestión de productos, clientes y cotizaciones. Permitiendo crear, editar, eliminar o simplemente visualizar información relacionada con cada uno de estos aspectos.",
+      "github": "https://github.com/Stivenjimenez08/Ztecnology-Frontend",
+      "web": "#"
     },
     {
       "id": 3,
       "title": "Portafolio",
       "image": "Portfolio.png",
-      "text": "Este proyecto es mi portafolio personal, el cual estás viendo en este momento. Aquí encontrarás mi información profesional, detalles sobre mí y todas las tecnologías que domino, así como información sobre todos mis proyectos."
+      "text": "Este proyecto es mi portafolio personal, el cual estás viendo en este momento. Aquí encontrarás mi información profesional, detalles sobre mí y todas las tecnologías que domino, así como información sobre todos mis proyectos.",
+      "github": "https://github.com/Stivenjimenez08/StevenPortfolio",
+      "web": "#"
     }
   ],
   "en": [
@@ -24,19 +30,25 @@
       "id": 1,
       "title": "Master Task",
       "image": "Todo.png",
-      "text": "A notes application that allows you to create a user, manage information and perform various actions with the notes, such as creating, editing, deleting or simply viewing them."
+      "text": "A notes application that allows you to create a user, manage information and perform various actions with the notes, such as creating, editing, deleting or simply viewing them.",
+      "github":"https://github.com/Stivenjimenez08/MasterTask-Frontend?tab=readme-ov-file",
+      "web":"https://mastertask-frontend-production.up.railway.app/"
     },
     {
       "id": 2,
       "title": "CRM ZTechnology",
       "image": "Crm.png",
-      "text": "An application that includes functions for the management of employees and roles, as well as the management of products, customers and quotations. It allows actions such as creating, editing, deleting or simply viewing information related to each of these aspects."
+      "text": "Application with functionalities for the management of employees and roles, as well as the management of products, customers and quotations. Allowing to create, edit, delete or simply view information related to each of these aspects.",
+      "github": "https://github.com/Stivenjimenez08/Ztecnology-Frontend",
+      "web": "#"
     },
     {
       "id": 3,
       "title": "Portfolio",
       "image": "Portfolio.png",
-      "text": "This project is my personal portfolio, which you are currently viewing. Here you will find my professional information, details about me and all the technologies I master, as well as information about all my projects."
+      "text": "This project is my personal portfolio, which you are currently viewing. Here you will find my professional information, details about me and all the technologies I master, as well as information about all my projects.",
+      "github": "https://github.com/Stivenjimenez08/StevenPortfolio",
+      "web": "#"
     }
   ]
 }
