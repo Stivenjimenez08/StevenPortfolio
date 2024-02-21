@@ -1,6 +1,9 @@
 .logo, .setIcon{
     filter: invert(100%); 
 }
+.contentHome{
+    margin-top: 4rem;
+}
 .contentPersonalInfo{
     display: flex;
     flex-direction: column;
@@ -90,7 +93,7 @@
 .habilities::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
-  
+
 @media (max-width: 480px) {
     #description{ font-size: 1.05rem; }
     #name{ font-size:1.7rem; text-align: center;}
@@ -801,6 +804,7 @@
     }
     }
     .contentAboutMe{
+        margin-top: 10rem;
         width: 100vw;
         height: 40vh;
         display: flex;
@@ -820,6 +824,7 @@
         }
     }
     .contentHabilities{
+        margin-top: 10rem;
         width: 100vw;
         height: 45vh;
         display: flex;
@@ -866,6 +871,7 @@
         }
     }
     .ContentProjects{
+        margin-top: 10rem;
         width: 70vw;
         height: auto;
         display: flex;

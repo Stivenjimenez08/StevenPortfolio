@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '../../../config/i18next.config'
 import '../../StyleComponent.css'
 
-export const NavBar = ({ toggleTheme, toggleLanguage }) => {
+export const NavBar = ({ toggleTheme, toggleLanguage, setActiveSection }) => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -50,6 +50,7 @@ export const NavBar = ({ toggleTheme, toggleLanguage }) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId);
     }
   };
   return (
